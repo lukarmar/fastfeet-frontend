@@ -6,20 +6,26 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@unform/core": "^2.0.0",
+    "@unform/web": "^2.0.0",
     "dotenv": "^8.2.0",
     "history": "^4.10.1",
+    "polished": "^3.4.4",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-icons": "^3.9.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
-    "reactotron-react-js": "^3.3.7"
+    "reactotron-react-js": "^3.3.7",
+    "semantic-ui-react": "^0.88.2",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
