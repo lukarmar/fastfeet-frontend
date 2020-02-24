@@ -17,7 +17,7 @@ export default function Input({ name, label, ...rest }) {
 
   return (
     <>
-      <label htmlFor={fieldName}>{label}</label>
+      {label && <label htmlFor={fieldName}>{label}</label>}
       <input
         id={fieldName}
         ref={inputRef}

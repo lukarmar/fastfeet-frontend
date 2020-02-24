@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Input from '~/components/Input';
-import logo from '~/assets/logo.png';
+import logo from '~/assets/logo_login.png';
 import { Container, BoxLogin, BoxForm } from './styles';
 
 export default function SignIn() {

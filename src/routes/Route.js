@@ -6,7 +6,7 @@ import AuthLayout from '~/pages/_layout/auth';
 import DefaultLayout from '~/pages/_layout/default';
 
 export default function RouteSet({ component: Component, isPrivate, ...rest }) {
-  const signed = false;
+  const signed = true;
 
   const Layout = signed ? DefaultLayout : AuthLayout;
 
