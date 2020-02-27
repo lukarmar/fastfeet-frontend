@@ -28,6 +28,27 @@ export const BoxForm = styled(Form)`
   flex-direction: column;
   width: 100%;
 
+  button {
+    background: #7d40e7;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    height: 45px;
+    padding: 12px 87px;
+    border-radius: 4px;
+
+    &:hover {
+      background: ${darken(0.05, '#7D40E7')};
+    }
+  }
+`;
+
+export const BoxInput = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: ${props => (props.resetMargin ? '0' : '15px')};
+
   label {
     color: #444444;
     font-weight: bold;
@@ -41,7 +62,7 @@ export const BoxForm = styled(Form)`
     border-radius: 4px;
     font-size: 16px;
     height: 45px;
-    margin-bottom: 15px;
+    margin-bottom: ${props => (props.resetMargin ? '18' : '0')};
     padding: 12px 0 12px 15px;
 
     &::placeholder {
@@ -49,17 +70,9 @@ export const BoxForm = styled(Form)`
     }
   }
 
-  button {
-    background: #7d40e7;
-    color: #ffffff;
+  span {
+    color: #de3b3b;
     font-weight: bold;
-    border: none;
-    height: 45px;
-    padding: 12px 87px;
-    border-radius: 4px;
-
-    &:hover {
-      background: ${darken(0.05, '#7D40E7')};
-    }
+    margin-bottom: 15px;
   }
 `;
