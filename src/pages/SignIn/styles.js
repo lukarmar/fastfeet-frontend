@@ -37,6 +37,10 @@ export const BoxForm = styled(Form)`
     padding: 12px 87px;
     border-radius: 4px;
 
+    svg {
+      width: 50%;
+    }
+
     &:hover {
       background: ${darken(0.05, '#7D40E7')};
     }
@@ -47,7 +51,7 @@ export const BoxInput = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: ${props => (props.resetMargin ? '0' : '15px')};
+  margin-bottom: 15px;
 
   label {
     color: #444444;
@@ -62,7 +66,6 @@ export const BoxInput = styled.div`
     border-radius: 4px;
     font-size: 16px;
     height: 45px;
-    margin-bottom: ${props => (props.resetMargin ? '18' : '0')};
     padding: 12px 0 12px 15px;
 
     &::placeholder {
@@ -73,6 +76,5 @@ export const BoxInput = styled.div`
   span {
     color: #de3b3b;
     font-weight: bold;
-    margin-bottom: 15px;
   }
 `;

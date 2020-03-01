@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import logoHeader from '~/assets/logo_header.svg';
@@ -6,6 +7,7 @@ import logoHeader from '~/assets/logo_header.svg';
 import { Container, BoxMenu, BoxUser } from './styles';
 
 export default function Header() {
+  const profile = useSelector(state => state.admin.profile.name);
   return (
     <Container>
       <BoxMenu>
@@ -20,7 +22,7 @@ export default function Header() {
         </div>
       </BoxMenu>
       <BoxUser>
-        <strong>Admin FastFeet</strong>
+        <strong>{profile}</strong>
         <span>sair do sistema</span>
       </BoxUser>
     </Container>
