@@ -7,6 +7,8 @@ import Delivery from '~/pages/Delivery/List';
 import RegisterDelivery from '~/pages/Delivery/Register';
 import EditDelivery from '~/pages/Delivery/Edit';
 
+import Deliveryman from '~/pages/Delieryman/List';
+
 export default function Routes() {
   return (
     <Switch>
@@ -15,6 +17,8 @@ export default function Routes() {
       <Route path="/delivery" exact component={Delivery} isPrivate />
       <Route path="/delivery/register" component={RegisterDelivery} isPrivate />
       <Route path="/delivery/edit" component={EditDelivery} isPrivate />
+
+      <Route path="/deliveryman" exact component={Deliveryman} isPrivate />
     </Switch>
   );
 }

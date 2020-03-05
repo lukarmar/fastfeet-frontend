@@ -7,7 +7,7 @@ import logoHeader from '~/assets/logo_header.svg';
 import { Container, BoxMenu, BoxUser } from './styles';
 
 export default function Header() {
-  const profile = useSelector(state => state.admin.profile.name);
+  // const profile = useSelector(state => state.admin.profile.name);
   return (
     <Container>
       <BoxMenu>
@@ -22,7 +22,7 @@ export default function Header() {
         </div>
       </BoxMenu>
       <BoxUser>
-        <strong>{profile}</strong>
+        <strong>Administrador</strong>
         <span>sair do sistema</span>
       </BoxUser>
     </Container>

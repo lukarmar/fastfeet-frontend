@@ -17,7 +17,7 @@ import {
 
 import { colors } from '~/util/colors';
 
-export default function ListDelivery() {
+export default function ListDeliveryman() {
   const [delivery, setDelivery] = useState([]);
   const [visible, setVisible] = useState(false);
 
@@ -34,7 +34,7 @@ export default function ListDelivery() {
   return (
     <Container>
       <BoxHeader>
-        <strong>Gerenciando encomendas</strong>
+        <strong>Gerenciando entregadores</strong>
         <div>
           <div className="boxInput">
             <div>
@@ -53,18 +53,15 @@ export default function ListDelivery() {
           <thead>
             <tr>
               <th>ID</th>
-              <th>Destinatário</th>
-              <th>Entregador</th>
-              <th>Cidade</th>
-              <th>Estado</th>
-              <th>Status</th>
+              <th>Foto</th>
+              <th>Nome</th>
+              <th>Email</th>
               <th>Ações</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>#01</td>
-              <td>Carlos Augusto</td>
               <td>
                 <LetterInAvatar
                   name="Marcos Meideiros"
@@ -76,16 +73,9 @@ export default function ListDelivery() {
                     'blue',
                   ])}
                 />
-                <span>Marcos Meideiros</span>
               </td>
-              <td>São Gonçalo</td>
-              <td>Rio de Janeiro</td>
-              <td>
-                <span className="ENTREGUE">
-                  <FaCircle size={10} />
-                  ETREGUE
-                </span>
-              </td>
+              <td>Carlos Augusto</td>
+              <td>carlos@gmail.com</td>
               <td>
                 <div className="boxOptions">
                   <FaEllipsisH
